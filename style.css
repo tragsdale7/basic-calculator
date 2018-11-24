@@ -1,0 +1,163 @@
+/*global styles*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+}
+
+body {
+	background-color: 	#E8E8E8;
+}
+
+/*utility classes*/
+
+.gray {
+	background-color: #E0E0E0;
+}
+
+.orange {
+	background-color: #FFA60D;
+}
+
+.dark-gray {
+	background-color: #303030;
+	color: white;
+}
+
+/*start nav*/
+
+nav {
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+	padding-bottom: 50px;
+	font-size: 3rem;
+}
+
+/*end nav*/
+
+/*start main*/
+
+.calculator-container div div:hover {
+	cursor: pointer;
+}
+
+.calculator-container {
+	display: grid;
+	grid-template-columns: 50px 50px 50px 50px;
+	grid-template-rows: 50px 50px 50px 50px 50px 50px;
+	grid-template-areas: 
+		"display display display display"
+		"ac sign-change percentage division"
+		"seven eight nine multiplication"
+		"four five six subtraction"
+		"one two three addition"
+		"zeroo zeroo _decimal _equals";
+	justify-items: center;
+	align-items: center;
+	background-color: black;
+	width: 220px;
+	margin: auto;
+	padding: 10px;
+}
+
+.calculator-container div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.circle {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.display-screen {
+	grid-area: display;
+	justify-self: end;
+	color: white;
+	padding-right: 10px;
+	font-size: 30px;
+}
+
+.ac {
+	grid-area: ac;
+}
+
+.sign-change {
+	grid-area: sign-change;
+}
+
+.percentage {
+	grid-area: percentage;
+}
+
+.division {
+	grid-area: division;
+}
+
+.seven {
+	grid-area: seven;
+}
+
+.eight {
+	grid-area: eight;
+}
+
+.nine {
+	grid-area: nine;
+}
+
+.multiplication {
+	grid-area: multiplication;
+}
+
+.four {
+	grid-area: four;
+}
+
+.five {
+	grid-area: five;
+}
+
+.six {
+	grid-area: six;
+}
+
+.subtraction {
+	grid-area: subtraction;
+}
+
+.one {
+	grid-area: one;
+}
+
+.two {
+	grid-area: two;
+}
+
+.three {
+	grid-area: three;
+}
+
+.addition {
+	grid-area: addition;
+}
+
+.zeroo {
+	grid-area: zeroo;
+}
+
+._decimal {
+	grid-area: _decimal;
+}
+
+._equals {
+	grid-area: _equals;
+}
+
+/*end main*/
